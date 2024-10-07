@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/*background video*/
+#background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    inset: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+#background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#background::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);  
+}
+
+/*background video*/
+
+#pag1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-conteudo{
+    width: 100%;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-conteudo p{
+    text-align: center;
+}
+
+
+
+.botoes{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skew(10deg);
+    font: 400 0.9rem "Mukta", sans-serif;
+    color: #EDF1F7;
+}
+
+.botao1{
+    background-color: #3C72B3; 
+}
+
+.botao2{
+    border: 1px solid #FFB74A;
+}
+/*Info jogo - esquerda*/
+
+
+
+/*capa jogo - direita*/
+
+    .capa-jogo{
+        height: 100%;
+    }
+
+/*capa jogo - direita*/
+
+
+@media (max-width: 986px){
+
+    .container-geral{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .conteudo-principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        
+    }
+    
+    .info-jogo{
+        align-items: center;
+    }
+
+    .info-jogo img{
+        width: 380px;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-jogo p{
+        text-align: center;
+    }
+
+    .caixa-botoes{
+        width: 100%;
+    }
+    
+    .capa-jogo{
+        display: none;
+    }   
+}
+
+@media (max-width: 500px){
+
+    .conteudo-principal{
+        height: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .info-jogo{
+        width: 100%;
+        height: 930px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .info-jogo p{
+        font-size: 16px;
+    }
+
+    .info-jogo img{
+        width: 230px;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
